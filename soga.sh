@@ -46,7 +46,7 @@ before_show_menu() {
 }
 
 install() {
-    sh <(curl -Ls https://raw.githubusercontent.com/HuTuTuOnO/Soga-Alpine/main/install.sh)
+    sh <(curl -Ls https://raw.githubusercontent.com/HuTuTuOnO/SogaAlpine/main/install.sh)
     [ $? -eq 0 ] && ( [ $# -eq 0 ] && start || start 0 )
 }
 
@@ -56,7 +56,7 @@ update() {
     else
         version=$2
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/HuTuTuOnO/Soga-Alpine/main/install.sh) $version
+    bash <(curl -Ls https://raw.githubusercontent.com/HuTuTuOnO/SogaAlpine/main/install.sh) $version
     if [ $? -eq 0 ]; then
         echo -e "${green}更新完成，已自动重启 soga，请使用 soga log 查看运行日志${plain}"
         exit
@@ -160,7 +160,7 @@ show_log() {
 }
 
 update_shell() {
-    wget -O /usr/bin/soga -N --no-check-certificate https://raw.githubusercontent.com/HuTuTuOnO/Soga-Alpine/main/soga.sh
+    wget -O /usr/bin/soga -N --no-check-certificate https://raw.githubusercontent.com/HuTuTuOnO/SogaAlpine/main/soga.sh
     if [ $? -ne 0 ]; then
         echo ""
         echo -e "${red}下载脚本失败，请检查本机能否连接 Github${plain}"

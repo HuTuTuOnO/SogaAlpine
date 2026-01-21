@@ -156,7 +156,7 @@ EOF
         echo -e ""
         echo -e "全新安装，请先配置必要的内容"
     else
-        rc-service soga start
+        rc-service soga restrat
         sleep 2
         check_status
         echo -e ""

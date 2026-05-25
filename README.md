@@ -10,4 +10,4 @@
 
 一键安装命令
 
-```bash <(curl -Ls https://raw.githubusercontent.com/HuTuTuOnO/Soga-Alpine/main/install.sh)```
+```bash <(curl -Ls https://raw.githubusercontent.com/HuTuTuOnO/SogaAlpine/main/install.sh)```
